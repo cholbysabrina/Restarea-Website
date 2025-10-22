@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restarea</title>
+    <link href="bootstrap-5.3.8-dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="bg-light">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-3 flex-wrap">
+                <div class="logo">
+                    <h1 class="h4 mb-1 fw-bold text-brown">Restarea</h1>
+                    <span class="text-muted small">Jl Arteri Raya 17, Kota Surabaya, Jawa Timur</span>
+                </div>
+                <div class="contact-info text-end">
+                    <p class="mb-0 small"><i class="telp"></i>+62-818-0345-5316</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="bg-brown text-white">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-2 flex-wrap">
+                <ul class="nav nav-pills mb-0">
+                    <li class="nav-item"><a href="#" data-filter="all" class="nav-link active">Beranda</a></li>
+                    <li class="nav-item"><a href="#" data-filter="asin" class="nav-link">Makanan Asin</a></li>
+                    <li class="nav-item"><a href="#" data-filter="pedas" class="nav-link">Makanan Pedas</a></li>
+                    <li class="nav-item"><a href="#" data-filter="manis" class="nav-link">Makanan Manis & Minuman</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content text-center">
+                <h1 class="hero-title display-3 fw-bold">Restarea</h1>
+                <h2 class="hero-subtitle h3">Caffe & Resto</h2>
+                <p class="hero-desc lead">Tempat santai dengan nuansa hangat & cita rasa premium</p>
+            </div>
+        </div>
+    </section>
+    <main>
+        <div class="container">
+            <div class="menu-section">
+                <h2>Menu Kami</h2>
+                <div class="menu-items">
+                    <div class="menu-item asin">
+                        <div class="item-image">
+                            <img src="makananasin.png" alt="Makanan Asin">
+                        </div>
+                        <div class="item-content">
+                            <h3>Makanan Asin</h3>
+                            <p>Makanan Asin - Cita rasa gurih dari garam yang menyempurnakan hidangan.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item pedas">
+                        <div class="item-image">
+                            <img src="makananpedas.jpeg" alt="Makanan Pedas">
+                        </div>
+                        <div class="item-content">
+                            <h3>Makanan Pedas</h3>
+                            <p>Makanan Pedas - Sensasi membara dari cabai dan rempah yang menggugah selera.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item manis">
+                        <div class="item-image">
+                            <img src="makananmanis.png" alt="Makanan Manis">
+                        </div>
+                        <div class="item-content">
+                            <h3>Makanan Manis</h3>
+                            <p>Makanan Manis - Kelembutan rasa gula yang menghadirkan kebahagiaan di setiap suapan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section id="asin" class="section-kategori" style="display: none;">
+        <div class="container">
+            <h2>Makanan Asin</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-image"><img src="nasigoreng.jpeg" alt="Nasi Goreng"></div>
+                    <div class="item-content">
+                        <h3>Nasi Goreng</h3>
+                        <p>Nasi goreng Jawa dengan telur ceplok.</p>
+                        <div class="item-price">Rp 15.000</div>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image"><img src="nasiuduk.jpeg" alt="Nasi Uduk"></div>
+                    <div class="item-content">
+                        <h3>Nasi Uduk</h3>
+                        <p>Nasi gurih dengan lauk khas Betawi, cocok untuk sarapan.</p>
+                        <div class="item-price">Rp 12.000</div>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image"><img src="miegoreng.png" alt="Mie Goreng"></div>
+                    <div class="item-content">
+                        <h3>Mie Goreng</h3>
+                        <p>Mie goreng dengan campuran ayam, udang, dan sayuran segar, disajikan dengan telur.</p>
+                        <div class="item-price">Rp 18.000</div>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image"><img src="bakso.jpeg" alt="Bakso"></div>
+                    <div class="item-content">
+                        <h3>Bakso</h3>
+                        <p>Bakso sapi kenyal berisi urat dengan kuah kaldu sapi yang gurih dan hangat.</p>
+                        <div class="item-price">Rp 20.000</div>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image"><img src="soto.jpeg" alt="Soto Ayam"></div>
+                    <div class="item-content">
+                        <h3>Soto Ayam</h3>
+                        <p>Soto ayam kuning dengan suwiran ayam, dan soun, kuah rempah yang segar dan hangat.</p>
+                        <div class="item-price">Rp 16.000</div>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image"><img src="ayamgoreng.jpeg" alt="Ayam Goreng"></div>
+                    <div class="item-content">
+                        <h3>Ayam Goreng</h3>
+                        <p>Ayam goreng renyah dengan bumbu khas Indonesia.</p>
+                        <div class="item-price">Rp 22.000</div>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pedas" class="section-kategori" style="display: none;">
+        <div class="container">
+            <h2>Makanan Pedas</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-image"><img src="ayamricarica.jpeg" alt="Ayam Rica-rica"></div>
+                    <div class="item-content">
+                        <h3>Ayam Rica-rica</h3>
+                        <p>Ayam dimasak dengan bumbu rica-rica pedas khas Manado yang kaya rempah.</p>
+                        <div class="item-price">Rp 25.000</div>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image"><img src="seblak.webp" alt="Seblak Pedas"></div>
+                    <div class="item-content">
+                        <h3>Seblak Pedas</h3>
+                        <p>Makanan khas Bandung dengan kuah pedas menggugah selera.</p>
+                        <div class="item-price">Rp 18.000</div>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image"><img src="ayamgeprek.webp" alt="Ayam Geprek"></div>
+                    <div class="item-content">
+                        <h3>Ayam Geprek</h3>
+                        <p>Ayam goreng crispy yang digeprek dengan sambal bawang pedas nan lezat.</p>
+                        <div class="item-price">Rp 20.000</div>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image"><img src="rendang.png" alt="Rendang Pedas"></div>
+                    <div class="item-content">
+                        <h3>Rendang Pedas</h3>
+                        <p>Rendang daging sapi dengan bumbu rempah padang yang pedas dan gurih.</p>
+                        <div class="item-price">Rp 30.000</div>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image"><img src="ayamsambalmatah.png" alt="Ayam Sambal Matah"></div>
+                    <div class="item-content">
+                        <h3>Ayam Sambal Matah</h3>
+                        <p>Ayam dengan sambal matah khas Bali yang segar dan pedas.</p>
+                        <div class="item-price">Rp 22.000</div>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image"><img src="cumi.jpeg" alt="Cumi Pedas"></div>
+                    <div class="item-content">
+                        <h3>Cumi Pedas</h3>
+                        <p>Cumi segar dimasak dengan saus pedas manis yang menggugah selera.</p>
+                        <div class="item-price">Rp 28.000</div>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="manis" class="section-kategori" style="display: none;">
+        <div class="container">
+            <h2>Makanan Manis & Minuman</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-image"><img src="donut.png" alt="Donut"></div>
+                    <div class="item-content">
+                        <h3>Donut</h3>
+                        <p>Donat lembut dengan taburan gula halus, cocok untuk teman santai.</p>
+                        <div class="item-price">Rp 8.000</div>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image"><img src="brownis.jpeg" alt="Brownies"></div>
+                    <div class="item-content">
+                        <h3>Brownies Coklat</h3>
+                        <p>Tekstur lembut dan rasa manis legit untuk pencinta cokelat.</p>
+                        <div class="item-price">Rp 12.000</div>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image"><img src="pancake.jpeg" alt="Pancake"></div>
+                    <div class="item-content">
+                        <h3>Pancake Madu</h3>
+                        <p>Pancake lembut disajikan dengan sirup madu alami.</p>
+                        <div class="item-price">Rp 15.000</div>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image"><img src="icecream.jpeg" alt="Es Krim Vanilla"></div>
+                    <div class="item-content">
+                        <h3>Es Krim Vanilla</h3>
+                        <p>Es krim vanilla lembut dengan toping coklat dan kacang.</p>
+                        <div class="item-price">Rp 10.000</div>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image"><img src="puding.jpeg" alt="Puding Coklat"></div>
+                    <div class="item-content">
+                        <h3>Puding Coklat</h3>
+                        <p>Puding coklat lembut dengan saus karamel yang manis.</p>
+                        <div class="item-price">Rp 9.000</div>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image"><img src="waffle.webp" alt="Waffle Berry"></div>
+                    <div class="item-content">
+                        <h3>Waffle Berry</h3>
+                        <p>Waffle renyah dengan buah berry segar dan madu.</p>
+                        <div class="item-price">Rp 18.000</div>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image"><img src="air.jpeg" alt="Air Mineral"></div>
+                    <div class="item-content">
+                        <h3>Air Mineral</h3>
+                        <p>Air mineral segar dalam kemasan botol.</p>
+                        <div class="item-price">Rp 5.000</div>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image"><img src="esteh.jpeg" alt="Es Teh"></div>
+                    <div class="item-content">
+                        <h3>Es Teh</h3>
+                        <p>Es teh segar dengan rasa manis yang pas.</p>
+                        <div class="item-price">Rp 7.000</div>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image"><img src="esjeruk.jpeg" alt="Es Jeruk"></div>
+                    <div class="item-content">
+                        <h3>Es Jeruk</h3>
+                        <p>Es jeruk segar dengan rasa manis asam yang menyegarkan.</p>
+                        <div class="item-price">Rp 8.000</div>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>Restarea berdiri sejak tahun 2020 di Kota Surabaya. Kami berkomitmen menyajikan hidangan terbaik dengan cita rasa khas Indonesia yaitu asin, pedas, dan manis yang menggugah selera. Dengan bahan segar dan bumbu pilihan, kami percaya setiap suapan adalah kebahagiaan.</p>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="container">
+            <h2>Menu Populer</h2>
+            <div class="gallery-grid">
+                <img src="ayamgoreng.jpeg" alt="Ayam Goreng">
+                <img src="miegoreng.jpeg" alt="Mie Goreng">
+                <img src="ayamgeprek.webp" alt="Ayam Geprek">
+                <img src="brownis.jpeg" alt="Brownis">
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <div class="contact-content">
+                <div class="contact-details">
+                    <p><i class="alamat-alt"></i> Jl. Arteri Raya 17, Surabaya</p>
+                    <p><i class="telp"></i> +62-818-0345-5316</p>
+                    <p><i class="email"></i> cholbysa12@gmail.com</p>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.321032913072!2d112.727!3d-7.332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbbb7f7c0d8d%3A0xf8e33b48db1c5f4!2sSurabaya!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Restarea. Caffe & Resto.</p>
+        </div>
+    </footer>
+    <div id="cartSidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>🛒 Keranjang Belanja</h3>
+            <span class="close-cart">&times;</span>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="cart-total">Total: <span id="cartTotal">Rp 0</span></div>
+            <button id="checkoutBtn" class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+    <div id="checkoutModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Checkout Pesanan</h3>
+            <div class="order-summary">
+                <h4>Ringkasan Pesanan:</h4>
+                <div id="checkoutItems"></div>
+                <div class="total-checkout">Total: <span id="checkoutTotal">Rp 0</span></div>
+            </div>
+            <form id="checkoutForm">
+                <div class="form-group">
+                    <label for="tableNumber">Nomor Meja:</label>
+                    <input type="number" id="tableNumber" min="1" max="50" required placeholder="Masukkan nomor meja">
+                </div>
+                <div class="form-group">
+                    <label for="customerName">Nama Pemesan :</label>
+                    <input type="text" id="customerName" placeholder="Nama Anda">
+                </div>
+                <div class="form-group">
+                    <label>Metode Pembayaran:</label>
+                    <div class="payment-options">
+                        <label><input type="radio" name="payment" value="tunai" checked> Tunai</label>
+                        <label><input type="radio" name="payment" value="qris"> QRIS</label>
+                        <label><input type="radio" name="payment" value="debit"> Kartu Debit</label>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="button" id="confirmOrder" class="confirm-order-btn">Konfirmasi Pesanan</button>
+                    <button type="button" id="cancelOrder" class="cancel-btn">Batal</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="receiptModal" class="modal" style="display: none;">
+        <div class="modal-content receipt">
+            <h3>🎉 Pesanan Berhasil!</h3>
+            <div class="receipt-content">
+                <div id="receiptDetails"></div>
+            </div>
+            <button id="closeReceipt" class="confirm-order-btn">Tutup</button>
+        </div>
+    </div>
+    <button id="cartButton" class="cart-floating-btn">🛒 <span id="cartCount">0</span></button>
+</body>
+</html>
